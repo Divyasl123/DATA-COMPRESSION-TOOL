@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    int i,j,l,count[50]={0};
+    char str[50];
+     printf("enter the string:");
+    scanf("%s",str);
+    printf("\n\t original string is:%s",str);
+    printf("\n\n\t encoded string is:");
+    l=strlen(str);
+    for(i=0;i<1;)
+    {
+
+        j=0;
+        count[i]=1; 
+        do
+        {
+           j++;
+           if(str[i+j]==str[i]) 
+        } while (str[i+j]==str[i]);
+        if(count[i]==1)
+        {
+            printf("%c",str[i++]);
+        }
+        else
+        {
+            printf("%d,%c",count[i],str[i]);
+            l+=count[i];
+        }
+        getch();
+        }
+        }
